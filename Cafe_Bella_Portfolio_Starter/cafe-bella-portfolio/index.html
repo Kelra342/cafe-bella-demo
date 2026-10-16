@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5eee4">
+  <meta name="description" content="Café Bella is a fictional café landing page concept created as a web design portfolio demo.">
+  <title>Café Bella — Coffee, Conversation & Cozy Days</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="announcement"><span class="sparkle">✦</span> A LITTLE CUP OF JOY, EVERY DAY <span class="sparkle">✦</span></div>
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Café Bella — home"><span class="brand-leaf" aria-hidden="true">❧</span> CAFÉ <strong>BELLA</strong><span class="brand-period">.</span></a>
+      <button class="menu-toggle" type="button" aria-controls="primary-nav" aria-expanded="false" aria-label="Open navigation menu"><span></span><span></span><span></span></button>
+      <nav class="main-nav" id="primary-nav" aria-label="Main navigation">
+        <a href="#home">Home</a><a href="#about">Our Story</a><a href="#menu">Menu</a><a href="#gallery">Gallery</a><a href="#contact">Contact</a>
+        <a class="nav-cta" href="#menu">Explore Menu <span aria-hidden="true">↗</span></a>
+      </nav>
+    </div>
+  </header>
+  <main id="main">
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow-line"></span> GOOD COFFEE · BRIGHTER DAYS</p>
+          <h1 id="hero-title">More than <em>coffee.</em><br>It's a <span class="underline-doodle">feeling.</span></h1>
+          <p class="hero-description">Slow mornings, rich aromas, and little moments worth savoring. Find your favorite corner and stay a while.</p>
+          <div class="hero-actions"><a href="#menu" class="button button-primary">Explore our menu <span aria-hidden="true">↗</span></a><a href="#about" class="text-link">Get to know us <span aria-hidden="true">→</span></a></div>
+          <div class="hero-proof"><span class="hero-proof-icon" aria-hidden="true">✳</span><div><strong>Made with love, served with warmth.</strong><br><small>Your happy place, one cup at a time.</small></div></div>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-photo-frame"><img src="assets/cafe-interior.webp" alt="Warm, softly lit Café Bella concept interior with welcoming tables" fetchpriority="high" width="594" height="624"><span class="image-tag">A space to slow down</span></div>
+          <div class="floating-card"><img src="assets/latte-art.webp" alt="Heart-shaped latte art" width="112" height="112"><div><span class="floating-label">A LITTLE MOMENT OF JOY</span><strong>Made for good days</strong><span class="floating-stars" aria-hidden="true">★★★★★</span></div></div>
+          <span class="orbit-text" aria-hidden="true">✧</span>
+        </div>
+      </div>
+      <div class="hero-bottom"><div class="container"><span>CRAFTED SLOWLY. ENJOYED FULLY.</span><span>SCROLL TO EXPLORE <span aria-hidden="true">↓</span></span></div></div>
+    </section>
+    <section class="welcome-section section-pad" id="about" aria-labelledby="about-title">
+      <div class="container about-grid">
+        <div class="about-photos"><img class="about-main" src="assets/cafe-corner.webp" loading="lazy" alt="Cozy café corner with soft chairs and greenery" width="476" height="550"><div class="about-sticker" aria-hidden="true">GOOD<br>VIBES<br>ONLY <span>✻</span></div><div class="about-small"><img src="assets/cozy-tables.webp" loading="lazy" alt="Warm and inviting café table setup" width="232" height="232"></div></div>
+        <div class="about-copy"><p class="eyebrow">01 / OUR STORY</p><h2 class="section-title" id="about-title">A cozy little<br>escape from the <em>everyday.</em></h2><p>At Café Bella, we believe the best moments happen over a great cup of coffee. Whether you're catching up with friends or taking a well-deserved pause, there's always a place for you here.</p><p>Good coffee, thoughtful details, and a warm welcome. That's our kind of everyday magic.</p><a href="#contact" class="text-link dark-link">Discover our space <span aria-hidden="true">↗</span></a><div class="about-signature">See you soon <span>♡</span></div></div>
+      </div>
+    </section>
+    <section class="menu-section section-pad" id="menu" aria-labelledby="menu-title">
+      <div class="container"><div class="section-head"><div><p class="eyebrow">02 / MADE WITH LOVE</p><h2 class="section-title" id="menu-title">Your new <em>favorites.</em></h2></div><p>From your first sip to the last bite, our menu is made for life's little pleasures.</p></div>
+        <div class="filter-row" role="group" aria-label="Filter menu items"><button type="button" class="filter-chip is-active" data-filter="all" aria-pressed="true">All favorites</button><button type="button" class="filter-chip" data-filter="coffee" aria-pressed="false">Coffee</button><button type="button" class="filter-chip" data-filter="non-coffee" aria-pressed="false">Non-coffee</button><button type="button" class="filter-chip" data-filter="pastry" aria-pressed="false">Pastries</button></div>
+        <div class="menu-grid" id="menu-items">
+          <article class="menu-card" data-category="coffee"><div class="menu-image"><img src="assets/latte-art.webp" loading="lazy" alt="Hot latte with leaf-shaped latte art" width="384" height="294"><span class="menu-badge">BEST SELLER</span></div><div class="menu-details"><div class="menu-heading"><h3>Signature Latte</h3><strong>₱150</strong></div><p>Smooth espresso, silky milk, a little extra love.</p></div></article>
+          <article class="menu-card" data-category="coffee"><div class="menu-image"><img src="assets/iced-latte.webp" loading="lazy" alt="Iced latte served in a clear glass" width="384" height="294"></div><div class="menu-details"><div class="menu-heading"><h3>Iced Bella Latte</h3><strong>₱160</strong></div><p>Bold coffee meets cool, creamy refreshment.</p></div></article>
+          <article class="menu-card" data-category="non-coffee"><div class="menu-image"><img src="assets/matcha-latte.webp" loading="lazy" alt="Creamy green matcha latte" width="384" height="294"></div><div class="menu-details"><div class="menu-heading"><h3>Matcha Cloud</h3><strong>₱170</strong></div><p>Velvety matcha with a gentle, earthy finish.</p></div></article>
+          <article class="menu-card" data-category="pastry"><div class="menu-image"><img src="assets/butter-croissant.webp" loading="lazy" alt="Golden flaky butter croissant" width="384" height="294"></div><div class="menu-details"><div class="menu-heading"><h3>Butter Croissant</h3><strong>₱140</strong></div><p>Buttery layers, a golden crust, freshly baked.</p></div></article>
+          <article class="menu-card" data-category="pastry"><div class="menu-image"><img src="assets/almond-pastry.webp" loading="lazy" alt="Golden almond pastry" width="384" height="294"></div><div class="menu-details"><div class="menu-heading"><h3>Almond Morning</h3><strong>₱155</strong></div><p>Sweet, nutty, and made for slow mornings.</p></div></article>
+          <article class="menu-card" data-category="coffee"><div class="menu-image"><img src="assets/cozy-tables.webp" loading="lazy" alt="Warm café atmosphere for enjoying coffee" width="384" height="294"></div><div class="menu-details"><div class="menu-heading"><h3>House Brew</h3><strong>₱120</strong></div><p>Comfort in a cup, fresh from our daily roast.</p></div></article>
+        </div><p class="menu-note">* Sample menu and prices for this fictional café concept.</p>
+      </div>
+    </section>
+    <section class="quote-band"><div class="container"><span class="quote-leaf" aria-hidden="true">✳</span><p>Life happens. <em>Coffee helps.</em></p><span class="quote-leaf" aria-hidden="true">✳</span></div></section>
+    <section class="gallery-section section-pad" id="gallery" aria-labelledby="gallery-title"><div class="container"><div class="section-head"><div><p class="eyebrow">03 / A LOOK INSIDE</p><h2 class="section-title" id="gallery-title">Little moments, <em>big feelings.</em></h2></div><p>Cozy corners, good company, and all the small things that make a day brighter.</p></div><div class="gallery-grid"><img src="assets/cafe-interior.webp" alt="Cafe interior and dining tables" loading="lazy" width="540" height="540"><img src="assets/latte-art.webp" alt="Coffee decorated with latte art" loading="lazy" width="290" height="280"><img src="assets/butter-croissant.webp" alt="Golden croissant plated for breakfast" loading="lazy" width="290" height="280"><img src="assets/cafe-corner.webp" alt="Comfortable café seating with plants" loading="lazy" width="290" height="280"><img src="assets/matcha-latte.webp" alt="Green matcha latte in a glass" loading="lazy" width="290" height="280"></div></div></section>
+    <section class="contact-section section-pad" id="contact" aria-labelledby="contact-title"><div class="container contact-grid"><div><p class="eyebrow">04 / LET'S CONNECT</p><h2 class="section-title" id="contact-title">See you at <em>Bella.</em></h2><p>Whether it's your daily coffee run or a slow Sunday morning, there's always room at our table.</p><div class="contact-notes"><div><span aria-hidden="true">◷</span><div><strong>Opening hours (sample)</strong><small>Mon–Sun: 8:00 AM – 9:00 PM</small></div></div><div><span aria-hidden="true">⌁</span><div><strong>Location</strong><small>Fictional café — no physical storefront</small></div></div></div><a class="button button-primary" href="mailto:hello@cafebella.example?subject=Hello%20Cafe%20Bella">Say hello <span aria-hidden="true">↗</span></a><p class="contact-disclaimer">Demo email address only — this button will open your email app but cannot deliver to a real business.</p></div><div class="contact-art"><img src="assets/latte-art.webp" alt="A warm latte welcoming guests" loading="lazy" width="480" height="520"><span>YOUR COZY CORNER AWAITS ✳</span></div></div></section>
+  </main>
+  <footer class="site-footer"><div class="container footer-top"><a class="brand footer-brand" href="#top">CAFÉ <strong>BELLA</strong><span class="brand-period">.</span></a><p>More than coffee. It's a feeling.</p><a href="#top" class="back-top">BACK TO TOP ↑</a></div><div class="container footer-bottom"><span>© <span id="year">2026</span> Café Bella Concept</span><span>Portfolio demo · Fictional brand · AI-generated concept imagery · No actual bookings or purchases</span></div></footer>
+</body>
+</html>
